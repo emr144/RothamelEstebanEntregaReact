@@ -1,0 +1,61 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+    height: 60px;
+  }
+  
+  .navbar__logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .navbar__links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Alinea los elementos al inicio */
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar__links li:first-child {
+    margin-left: 0; /* Asegúrate de que "Inicio" esté alineado a la izquierda */
+  }
+  
+  .navbar__cart {
+    margin-left: auto; /* Empuja el carrito hacia la derecha */
+  }
+  
+  .navbar__links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+  }
+  
+  .navbar__links li a:hover {
+    color: #ff9800;
+  }
+  
+  .navbar__cart img {
+    height: 3rem; /* Ajusta el tamaño del ícono al tamaño de la fuente */
+    width: auto; /* Mantén la proporción del ícono */
+    vertical-align: middle; /* Alinea el ícono con el texto */
+  }
+
+  .navbar__logo-container {
+    display: flex;
+    align-items: flex-end; /* Alinea el logo a la base inferior del contenedor */
+    justify-content: center; /* Opcional: centra horizontalmente el logo dentro del contenedor */
+    height: 100%; /* Asegúrate de que el contenedor ocupe toda la altura del navbar */
+  }
+  
+  .navbar__logo {
+    height: 65px; /* Ajusta el tamaño del logo */
+    width: auto; /* Mantén la proporción */
+  }
