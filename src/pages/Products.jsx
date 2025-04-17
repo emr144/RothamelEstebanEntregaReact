@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import ProductCard from "../components/ProductCard";
 import "../components/styles/Products.css";
 
+import caja from '../assets/images/caja.jpg';
+
 
 function Products() {
   const [products, setProducts] = useState([]);
@@ -10,16 +12,16 @@ function Products() {
   useEffect(() => {
     const fetchProducts = async () => {
       const fakeProducts = [
-        { id: 1, title: "Producto 1", image: "", price: 100 },
-        { id: 2, title: "Producto 2", image: "", price: 200 },
-        { id: 3, title: "Producto 3", image: "", price: 300 },
+        { id: 1, title: "Producto 1", image: caja, price: 150 },
+        { id: 2, title: "Producto 2", image: caja, price: 200 },
+        { id: 3, title: "Producto 3", image: caja, price: 300 },
       ];
       // Simula un retraso
       await new Promise((resolve) => setTimeout(resolve, 1000));
       setProducts(fakeProducts);
     };
 
-    fetchProducts();
+    fetchProducts();        // Llama a la función para obtener productos
   }, []);
 
   return (
