@@ -1,6 +1,10 @@
+import React from "react";
 import CardWidchet from "./CarWidchet";
 import LogoWidchet from "./LogoWidchet";   
-import "./styles/navbar.css";
+import "./styles/App.css";
+// filepath: src/components/Navbar.jsx
+import { Link } from 'react-router-dom';
+
 
 function Navbar() {
   return (
@@ -9,10 +13,10 @@ function Navbar() {
         <LogoWidchet />
       </div>
       <ul className="navbar__links">
-        <li><a href="#home">Inicio</a></li>
-        <li><a href="#product">Productos</a></li>
-        <li><a href="#about">Nosotros</a></li>
-        <li><a href="#contact">Contactos</a></li>
+        <li><Link to="/">Inicio</Link></li>
+        <li><Link to="/products">Productos</Link></li>
+        <li><Link to="/about">Nosotros</Link></li>
+        <li><Link to="/contact">Contactos</Link></li>
         <li className="navbar__cart"><CardWidchet /></li>
       </ul>
     </nav>
