@@ -1,1 +1,13 @@
 0.34
+
+        <option value="">Todas</option>
+        <option value="Herramientas Manuales">Herramientas Manuales</option>
+        <option value="Herramientas Eléctricas">Herramientas Eléctricas</option>
+        <option value="Instrumentos de Medición">Instrumentos de Medición</option>
+        <option value="Almacenamiento">Almacenamiento</option>
+        <option value="Herramientas de Corte">Herramientas de Corte</option>
+        <option value="Pintura y Acabados">Pintura y Acabados</option>
+        <option value="Protección Personal">Protección Personal</option>
+        <option value="Iluminación">Iluminación</option>
+        <option value="Seguridad">Seguridad</option>
+        <option value="Fijación">Fijación</option>

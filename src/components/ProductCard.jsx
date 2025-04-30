@@ -14,7 +14,7 @@ function ProductCard({ product, onViewProduct }) {
         style={{ maxWidth: "400px", maxHeight: "400px" }} 
       /> <h3>{product.title}</h3>
       <p>Precio: ${product.price}</p>
-      <button onClick={onViewProduct}>Ver Detalles</button>
+      <button className="view-details-button" onClick={onViewProduct}>Ver Detalles</button>
     </div>
   );
 }
