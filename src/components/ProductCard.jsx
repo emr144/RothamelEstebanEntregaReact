@@ -1,22 +1,22 @@
-import { Link } from "react-router-dom";
 import React from "react";
+import './styles/Products.css';
 
+function ProductCard({ product, onViewProduct }) {
+  if (!product) {
+    return <div>Producto no disponible</div>; // Manejo de error si product es undefined
+  }
 
-function ProductCard({ title, image, price }) {
   return (
     <div className="product-card">
-      <h2>{title}</h2>
-      <img src={image} alt={title} className="product-card__image" />
-      <p className="product-card__price">${price}</p>
-      <Link to={`/products/${title}`} className="product-card__link">Ver Producto</Link> 
-
+      <img 
+        src={product.image} 
+        alt={product.title} 
+        style={{ maxWidth: "400px", maxHeight: "400px" }} 
+      /> <h3>{product.title}</h3>
+      <p>Precio: ${product.price}</p>
+      <button onClick={onViewProduct}>Ver Detalles</button>
     </div>
   );
 }
 
 export default ProductCard;
-
-//Este componente será reutilizable 
-// y recibirá las propiedades (props)
-// necesarias para mostrar el título,
-// la imagen y el precio.

@@ -6,13 +6,13 @@ import Home from './pages/Home';
 import Products from './pages/Products';
 import About from './pages/About';
 import Contact from './pages/Contact';
-import { withLogging } from './HOC/withLogging.jsx';
-import ItemListContainer from './components/ItemListContainer'; // Corrección aquí
-import ProductCard2 from './components/ProductCard2.jsx';
-import ProductCard from './components/ProductCard.jsx'; 
+import { withLogging } from "./HOC/withLogging.jsx";
+import ItemListContainer from "./components/ItemListContainer";
+import ProductDetail from "./components/ProductDetail"; 
 
 
-const ItemListContainerWithLogging = withLogging(ItemListContainer); // Corrección aquí
+
+const ItemListContainerWithLogging = withLogging(ItemListContainer);
 console.log("App renderizada");
 
 function App() {
@@ -26,8 +26,8 @@ function App() {
             <Route path="/products" element={<Products />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/products/:productName" element={<ProductCard />} /> 
-            <Route path="/products/:productName" element={<ProductCard2 />} /> 
+            <Route path="/product/:id" element={<ProductDetail />} />
+
           </Routes>
         </main>
         {/* 
